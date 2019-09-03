@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+body {
+    background: url(http://jsrun.it/assets/j/Q/U/k/jQUk6.png) no-repeat 0 -1000px, url(http://jsrun.it/assets/1/y/L/5/1yL5Z.png) no-repeat 0 -1000px;
+}
+#container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    background: #222 url(http://jsrun.it/assets/v/Y/7/g/vY7gy.png);
+}
+.targetUFO {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    background: url(http://jsrun.it/assets/i/j/6/o/ij6oP.png) no-repeat;
+}
+.targetUFO.bom:after {
+    content: url(http://jsrun.it/assets/j/Q/U/k/jQUk6.png);
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: -10px;
+    width: 120px;
+    height: 120px;    
+}
+.cannonball {
+    position: absolute;
+    z-index: 8;
+    bottom: 50px;
+    width: 24px;
+    height: 12px;
+    background: url(http://jsrun.it/assets/k/F/1/5/kF15D.png);
+}
+#missile {
+    position: absolute;
+    z-index: 10;
+    bottom: 30px;
+    width: 96px;
+    height: 40px;
+}
+#earth {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: url(http://jsrun.it/assets/y/8/M/t/y8Mts.png) no-repeat 0 0;
+    background-size: 100% 100px;
+}
+#earth.active {
+    background-position: 0 -50px;
+}
+#lifeList {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#lifeList li {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 28px;
+    height: 24px;
+    margin-right: 9px;
+}
+#lifeList li img {
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+#lifeList li.active img {
+    top: 0;
+}
+#light {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+#blockScoreWrap {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+#blockScore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    margin: -50px 0 0 -100px;
+    background: url(http://jsrun.it/assets/1/y/L/5/1yL5Z.png) no-repeat 0 100%;
+    text-align: center;
+}
+#blockScore .sentence {
+    margin-bottom: 15px;
+    color: white;
+}
+#blockScore .sentence h2 {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 5px;
+    border-bottom: solid 1px white;
+    font-size: 12px;
+}
+#blockScore .sentence p {
+    font-size: 20px;
+    font-weight: bold;
+}
+#btnTweet {
+    display: inline-block;
+}
+#btnTweet a {
+    display: block;
+    padding: 10px 12px;
+    background: #35ccff;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    line-height: 1;
+    text-shadow: -1px -1px 0 #4295c1;
+    text-decoration: none;
+} 
+#btnTweet a:hover {
+    opacity: 0.7;
+}
+ll

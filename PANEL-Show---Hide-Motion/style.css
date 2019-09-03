@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+#container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 465px;
+    height: 465px;
+    margin: -232.5px 0 0 -232.5px;
+    background: url(./bg.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background: #dce6ec;
+}
+
+/* --------------------------------------------------
+    blockPanels
+-------------------------------------------------- */
+#blockPanelsCanvas {
+    position: relative;
+    width: 465px;
+    height: 465px;
+}
+#blockPanelsCanvas canvas {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -563px;
+    margin-top: -470px;
+}
+#blockPanelsCanvas .listPanels {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    padding: 127px 0 0 0;
+    text-align: center;
+    /*background-color: rgba(255,0,0,0.2);*/
+}
+#blockPanelsCanvas .listPanels li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 204px;
+    height: 204px;
+    margin: -91.8px 9px 0;
+    padding: 70px 0 0 0;
+    /*background-color: rgba(0,250,0,0.2);*/
+    opacity: 0;
+}
+#blockPanelsCanvas .listPanels li.hide {
+    opacity: 0;
+    transition: 0.8s ease-out;
+    -webkit-transition: 0.8s ease-out;
+    -moz-transition: 0.8s ease-out;
+    -ms-transition: 0.8s ease-out;
+    -o-transition: 0.8s ease-out;
+}
+#blockPanelsCanvas .listPanels li.show {
+    opacity: 1;
+    transition: 0.8s ease-out 1.0s;
+    -webkit-transition: 0.8s ease-out 1.0s;
+    -moz-transition: 0.8s ease-out 1.0s;
+    -ms-transition: 0.8s ease-out 1.0s;
+    -o-transition: 0.8s ease-out 1.0s;
+}
+#blockPanelsCanvas .listPanels li:nth-child(3) {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#blockPanelsCanvas .listPanels li .num {
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1;
+    color: #3e94e2;
+    font-family: serif;
+}
+#blockPanelsCanvas .listPanels li h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 1;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+

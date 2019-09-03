@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* --------------------------------------------------
+	Reset
+-------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+html {
+    overflow-y: hidden;
+	height: 100% !important;
+}
+body {
+	height: 100%;
+	color: black;
+    font-family: Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+	font-size: 13px;
+	line-height: 1.5;	
+    word-break: break-all;
+} 
+a {
+	color: black;
+	text-decoration: underline;
+}
+a:hover, a:active  {
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------------
+	clearfix
+------------------------------------------------------------ */
+.group:after {
+	content : '';
+	display : block;
+	clear : both;
+	height: 0;
+}
+
+/* --------------------------------------------------
+	container
+-------------------------------------------------- */
+#container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    padding: 44px 0 48px;
+    background: -webkit-linear-gradient(left, #c5ccd4, #c5ccd4 66%, #cbd2d8 67%, #cbd2d8);
+    background: -moz-linear-gradient(left, #c5ccd4, #c5ccd4 66%, #cbd2d8 67%, #cbd2d8);
+    background-size: 7px 7px;
+}
+
+/* --------------------------------------------------
+	Bar
+-------------------------------------------------- */
+.bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#appHeader {
+    top: 0;
+    height: 44px;
+    background: -webkit-linear-gradient(top, #b7c1d0, #8e9fb6 49%, #7e93af 51%, #6f85a3);
+    background: -moz-linear-gradient(top, #b7c1d0, #8e9fb6 49%, #7e93af 51%, #6f85a3);
+    border-top: solid 1px #cbcfd3;
+    border-bottom: solid 1px #3e4246;
+}
+#appHeader h1 {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 #5c6c7f;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+}
+#appFooter {
+    bottom: 0;
+    height: 48px;
+    background: -webkit-linear-gradient(top, #2e2e2e, #161616 49%, black 51%, black);
+    background: -moz-linear-gradient(top, #2e2e2e, #161616 49%, #000 51%, #000);
+    border-top: solid 1px black;
+    color: white;
+}
+#appFooter:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #444;
+}
+
+/* --------------------------------------------------
+	content
+-------------------------------------------------- */
+#contentWrap {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+#content {
+    border-top: solid 1px #ddd;
+    -moz-transition: 0.03s linear;
+    -webkit-transition: 0.03s linear;
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+#content.transitionNone {
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+}
+
+/* --------------------------------------------------
+	Loading
+-------------------------------------------------- */
+#contentLoader {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+#contentLoader p {
+    display: none;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #576c89;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+#contentLoader.pull .pull,
+#contentLoader.loading .loading,
+#contentLoader.release .release {
+    display: inline-block;
+}
+
+
+/* --------------------------------------------------
+	unitChara
+-------------------------------------------------- */
+.unitBlock {
+    padding: 30px 10px;
+    background: white;
+    border-bottom: solid 1px #ddd;
+}

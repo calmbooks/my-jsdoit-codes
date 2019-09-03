@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+#container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 465px;
+    height: 465px;
+    margin: -232.5px 0 0 -232.5px;
+    background: #9db9d9;
+}
+

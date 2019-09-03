@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+}
+#container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 465px;
+    height: 465px;
+    margin: -232.5px 0 0 -232.5px;
+    background: url(http://jsrun.it/assets/E/i/z/4/Eiz4o.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#content {
+    height: 5000px;
+}
+#scroll {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -35px;
+    animation: fuwafuwa 0.8s ease-in-out infinite alternate;
+    -webkit-animation: fuwafuwa 0.8s ease-in-out infinite alternate;
+    -moz-animation: fuwafuwa 0.8s ease-in-out infinite alternate;
+    -ms-animation: fuwafuwa 0.8 ease-in-out infinite alternate;    
+}
+@keyframes fuwafuwa {
+    0%   { transform: translate(0,1px) }
+    100% { transform: translate(0,-2px) }
+}
+@-webkit-keyframes fuwafuwa {
+    0%   { -webkit-transform: translate(0,1px) }
+    100% { -webkit-transform: translate(0,-2px) }
+}
+@-moz-keyframes fuwafuwa {
+    0%   { -moz-transform: translate(0,1px) }
+    100% { -moz-transform: translate(0,-2px) }
+}
+@-ms-keyframes fuwafuwa {
+    0%   { -ms-transform: translate(0,1px) }
+    100% { -ms-transform: translate(0,-2px) }
+}

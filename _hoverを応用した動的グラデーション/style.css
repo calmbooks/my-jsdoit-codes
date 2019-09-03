@@ -1,0 +1,68 @@
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+li { 
+  list-style: none;
+}
+ul {
+  position: relative;
+  width: 465px;
+  height: 465px;
+  background: #FF6600;
+}
+li {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  z-index: 2;
+}
+
+.a1, .a2, .a3, .a4, .a5 { top: 0px; }
+.b1, .b2, .b3, .b4, .b5 { top: 93px; }
+.c1, .c2, .c3, .c4, .c5 { top: 186px; }
+.d1, .d2, .d3, .d4, .d5 { top: 279px; }
+.e1, .e2, .e3, .e4, .e5 { top: 372px; }
+.a1, .b1, .c1, .d1, .e1 { left: 0px; }
+.a2, .b2, .c2, .d2, .e2 { left: 93px; }
+.a3, .b3, .c3, .d3, .e3 { left: 186px; }
+.a4, .b4, .c4, .d4, .e4 { left: 279px; }
+.a5, .b5, .c5, .d5, .e5 { left: 372px; }
+
+.a1:hover, .a2:hover, .a3:hover, .a4:hover, .a5:hover,
+.b1:hover, .b2:hover, .b3:hover, .b4:hover, .b5:hover,
+.c1:hover, .c2:hover, .c3:hover, .c4:hover, .c5:hover,
+.d1:hover, .d2:hover, .d3:hover, .d4:hover, .d5:hover,
+.e1:hover, .e2:hover, .e3:hover, .e4:hover, .e5:hover {
+  top: 0px;
+  left: 0px;
+  width: 465px;
+  height: 465px;
+  z-index: 1;
+}
+.a1:hover { background: #FF6600; }
+.a2:hover { background: #FF761A; }
+.a3:hover { background: #FF8939; }
+.a4:hover { background: #FF954D; }
+.a5:hover { background: #FFAC73; }
+.b1:hover { background: #FF8800; }
+.b2:hover { background: #FF8F1F; }
+.b3:hover { background: #FF9C39; }
+.b4:hover { background: #FFA750; }
+.b5:hover { background: #FFB56C; }
+.c1:hover { background: #FFAA00; }
+.c2:hover { background: #FFAD1D; }
+.c3:hover { background: #FFB533; }
+.c4:hover { background: #FFBE4A; }
+.c5:hover { background: #FFC661; }
+.d1:hover { background: #FFCC00; }
+.d2:hover { background: #FFD41D; }
+.d3:hover { background: #FFD836; }
+.d4:hover { background: #FFDD4D; }
+.d5:hover { background: #FFE269; }
+.e1:hover { background: #FFEE00; }
+.e2:hover { background: #FFE91F; }
+.e3:hover { background: #FFEB36; }
+.e4:hover { background: #FFEE50; }
+.e5:hover { background: #FFF069; }
+

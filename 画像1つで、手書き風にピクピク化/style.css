@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100% !important;
+}
+body {
+    overflow: hidden;
+	position: relative;
+	background: #eee url(http://jsrun.it/assets/j/S/4/G/jS4GT.png);
+	background-size: 20px auto;
+	height: 100%;
+}
+#c {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

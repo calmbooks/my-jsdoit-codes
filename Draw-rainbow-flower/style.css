@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100% !important;
+}
+body {
+	overflow: hidden;
+	position: relative;
+	background: #F0E8CB;
+	height: 100%;
+}
+#c {
+	display: block;
+}

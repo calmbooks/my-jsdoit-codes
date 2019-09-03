@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------------------------
+　　インタフェース部分
+-----------------------------------*/
+body {
+  line-height: 1.2;
+  background: #111; 
+  
+  background-image: -moz-linear-gradient(left top -45deg, #000, #000 25%, #111 25%, #111 50%, #000 50%, #000 75%, #111 75%, #111);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#000), color-stop(25%, #000), color-stop(25%, #111), color-stop(50%, #111), color-stop(50%, #000), color-stop(75%, #000), color-stop(75%, #111), to(#111));
+  -moz-background-size: 7px 7px;
+  -webkit-background-size: 7px 7px; 
+}
+#interface {
+  padding: 0 20px;
+  min-width: 425px;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.2), rgba(255,255,255,0));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.2)), to(rgba(255,255,255,0)));
+}
+#header {
+  height: 50px;
+}
+#header h1 {
+  float: left;
+  color: #fff;
+  height: 50px;
+  font-size: 23px;
+  padding: 12px 0 0;
+  font-style: italic;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-shadow: 0 -1px 1px #000;
+}
+#header strong {
+  color: #2FCCC8;
+}
+#timer {
+  line-height: 2;
+  padding: 0 5px;
+  float: right;
+  font-size: 11px;
+  color: #FFDA00;
+  margin: 12px 0 0;
+  background: #000;
+  border-top: solid #111 2px;
+  border-right: solid #999 2px;
+  border-bottom: solid #999 2px;
+  border-left: solid #111 2px;
+  font-style: italic;
+}
+
+/*-----------------------------------
+　　コース部分
+-----------------------------------*/
+#area {
+  width: 421px;
+  height: 391px;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  border-top: solid #111 2px;
+  border-right: solid #999 2px;
+  border-bottom: solid #999 2px;
+  border-left: solid #111 2px;
+  background: -moz-linear-gradient(top, #333, #111);
+  background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));
+}
+#start, #goal, .road {
+  position: absolute
+}
+#start, #goal {
+  width: 140px;
+  height: 50px;
+}
+#start {
+  top: 0;
+  left: 0;
+  background: #69DB65;
+  
+  border-radius: 0 0 30px 0;
+  -webkit-border-radius: 0 0 30px 0;
+  -moz-border-radius: 0 0 30px 0; 
+}
+#start p, #goal p {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+#start p span, #goal p span {
+  display: block;
+  font-size: 11px;
+}
+.road, #goal, #result{
+  display: none;
+}
+.r01 {
+  display: block;
+  width: 40px;
+  height: 5px;
+  top: 45px;
+  left: 45px;
+  backgroud: #fff;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+#start:hover .r01 {
+  height: 250px;
+  background: #69DB65;
+}
+#start:hover .r01 .r02 {
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 250px;
+  left: 0px;
+  background: #B7D866;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  
+  border-radius: 0 0 0 40px;
+  -webkit-border-radius: 0 0 0 40px;
+  -moz-border-radius: 0 0 0 40px; 
+}
+#start .r01 .r02:hover {
+  width: 120px;
+}
+#start .r01 .r02:hover .r03 {
+  display: block;
+  width: 40px;
+  height: 40px;
+  bottom: 0px;
+  left: 120px;
+  background: #D8D066;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  
+  border-radius: 0 0 40px 0;
+  -webkit-border-radius: 0 0 40px 0;
+  -moz-border-radius: 0 0 40px 0; 
+}
+#start .r01 .r02 .r03:hover {
+  height: 250px;
+}
+#start .r01 .r02 .r03:hover .r04 {
+  display: block;
+  width: 40px;
+  height: 30px;
+  bottom: 250px;
+  left: 0px;
+  background: #D8A966;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  
+  border-radius: 30px 0 0 0;
+  -webkit-border-radius: 30px 0 0 0;
+  -moz-border-radius: 30px 0 0 0; 
+}
+#start .r01 .r02 .r03 .r04:hover {
+  width: 180px;
+}
+#start .r01 .r02 .r03 .r04:hover .r05 {
+  display: block;
+  width: 25px;
+  height: 30px;
+  top: 0px;
+  left: 180px;
+  background: #D88366;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  
+  border-radius: 0 25px 0 0;
+  -webkit-border-radius: 0 25px 0 0;
+  -moz-border-radius: 0 25px 0 0; 
+}
+#start .r01 .r02 .r03 .r04 .r05:hover {
+  height: 100px;
+}
+#start .r01 .r02 .r03 .r04 .r05:hover .r06 {
+  display: block;
+  width: 25px;
+  height: 20px;
+  top: 100px;
+  right: 0px;
+  background: #D86666;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  
+  border-radius: 0 0 20px 0;
+  -webkit-border-radius: 0 0 20px 0;
+  -moz-border-radius: 0 0 20px 0; 
+}
+#start .r01 .r02 .r03 .r04 .r05 .r06:hover {
+  width: 100px;
+}
+#start .r01 .r02 .r03 .r04 .r05 .r06:hover .r07 {
+  display: block;
+  width: 15px;
+  height: 20px;
+  top: 0px;
+  right: 100px;
+  background: #D866A7;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  
+  border-radius: 15px 0 0 0;
+  -webkit-border-radius: 15px 0 0 0;
+  -moz-border-radius: 15px 0 0 0; 
+}
+#start .r01 .r02 .r03 .r04 .r05 .r06 .r07:hover {
+  height: 100px;
+}
+#start .r01 .r02 .r03 .r04 .r05 .r06 .r07:hover .r08 {
+  display: block;
+  width: 15px;
+  height: 10px;
+  top: 100px;
+  left: 0px;
+  background: #C266D8;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  
+  border-radius: 0 0 0 10px;
+  -webkit-border-radius: 0 0 0 10px;
+  -moz-border-radius: 0 0 0 10px; 
+}
+#start .r01 .r02 .r03 .r04 .r05 .r06 .r07 .r08:hover {
+  width: 100px;
+}
+#start .r01 .r02 .r03 .r04 .r05 .r06 .r07 .r08:hover .r09 {
+  display: block;
+  width: 7px;
+  height: 10px;
+  top: 0px;
+  left: 100px;
+  background: #9266D8;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  
+  border-radius: 0 7px 0 0;
+  -webkit-border-radius: 0 7px 0 0;
+  -moz-border-radius: 0 7px 0 0;
+}
+#start .r01 .r02 .r03 .r04 .r05 .r06 .r07 .r08 .r09:hover {
+  height: 60px;
+}
+#start .r01 .r02 .r03 .r04 .r05 .r06 .r07 .r08 .r09:hover #goal {
+  display: block;
+  top: 60px;
+  left: -100px;
+  background: #6679D8;
+  
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; 
+}
+
+
+/*-----------------------------------
+　　結果表示
+-----------------------------------*/
+#result {
+  display: block;
+  position: absolute;
+  top: -120px;
+  left: -45px;
+  width: 5px;
+  height: 5px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+#result .text,
+#result .btn {
+  display: none;
+}
+
+#start .r01 .r02 .r03 .r04 .r05 .r06 .r07 .r08 .r09 #goal:hover #result {
+  top: -315px;
+  left: -255px;
+  width: 421px;
+  height: 391px;
+  background: rgba(0, 0, 0, 0.7);
+}
+#result .text {
+  text-align: center;
+  width: 250px;
+  margin: 150px auto 0;
+  color: #fff;
+}
+#result .text strong {
+  font-size: 20px;
+}
+
+#result .btn {
+  width: 100px;
+  margin: 30px auto 0;
+}
+#start .r01 .r02 .r03 .r04 .r05 .r06 .r07 .r08 .r09 #goal #result:hover .text,
+#start .r01 .r02 .r03 .r04 .r05 .r06 .r07 .r08 .r09 #goal #result:hover .btn {
+  display: block;
+}
+#result .btn a {
+  text-align: center;
+  display: block;
+  line-height: 2.5;
+  background: #5DBEF4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; 
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+}
+#result .btn a:hover {
+  cursor: pointer;
+  background: #84C9EF;
+}
+
+
+/*-----------------------------------
+　　その他
+-----------------------------------*/
+.group:after { content: ""; display: block; clear: both; }
+
+
+

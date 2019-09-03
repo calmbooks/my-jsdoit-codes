@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100% !important;
+}
+body {
+	position: relative;
+	background: black;
+	height: 100%;
+	text-align: center;
+}
+canvas {
+    display: block;
+}
+li {
+	list-style: none;
+}
+#list_canvas {
+    display: none;
+}
+#list_canvas:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#list_canvas li {
+	float: left;
+}
+#list_canvas li canvas {
+	display: block;
+	background: white;
+}
+#image {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 0;
+    width: 150px;
+    margin-left: -75px;
+    text-align: center;
+}
+#image img {
+    vertical-align: middle;
+    max-width: 150px;
+    max-height: 150px;
+    border: solid 1px #00FF00;
+    background: white;
+}
+#c_triangle {
+    float: left;
+    background: white;
+}
+#c_line {
+    float: left;
+    background: black;
+}

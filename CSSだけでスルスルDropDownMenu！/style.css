@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo","メイリオ", Verdana,Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+ 
+#nav {
+  width: 390px;
+  height: 33px;
+  margin: 120px 0 0 20px;
+  
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  
+  box-shadow: 1px 1px 3px #999;
+  -webkit-box-shadow: 1px 1px 3px #999;
+  -moz-box-shadow: 1px 1px 3px #999;
+}
+.menu {
+  float: left;
+  position: relative;
+  width: 130px;
+  height: 1px;
+  
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  
+  box-shadow: 1px 1px 3px #999;
+  -webkit-box-shadow: 1px 1px 3px #999;
+  -moz-box-shadow: 1px 1px 3px #999;
+  
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  background: -moz-linear-gradient(#fff, #eee);
+}
+.menu01:hover {
+  height: 180px;
+}
+.menu02:hover {
+  height: 120px;
+}
+.menu03:hover {
+  height: 150px;
+}
+ 
+.menu li {
+  position: absolute;
+  left: 0;
+  width: 128px;
+  border-left: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+}
+ 
+.menu li a {
+  display: block;
+  height: 21px;
+  padding: 10px 0 0 5px;
+  color: #f52;
+  font-size: 10px;
+  text-decoration: none;
+}
+.menu li a:hover {
+  background: #FDC;
+  cursor: pointer;
+}
+.menu .main {
+  top: 0%;
+  z-index: 1;
+  text-align: center;
+  width: 130px;
+  border: none;
+}
+.menu .main a {
+  height: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  padding: 6px 0 0;
+  border-top: solid 1px #d21;
+  border-bottom: solid 1px #d21;
+  text-shadow: 0 -1px 1px #d21;
+  
+  background: -webkit-gradient(linear, left top, left bottom, from(#f96), color-stop(90%, #f42), to(#f21));
+  background: -moz-linear-gradient(#f96, #f42 90%, #f21);
+}
+.menu01 .main {
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+}
+.menu01 .main a {
+  border-left: solid 1px #d21;
+  
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+}
+.menu03 .main {
+  border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+}
+.menu03 .main a {
+  border-right: solid 1px #d21;
+  
+  border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+}
+.menu .main a:hover {
+  background: #A6E;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f74), color-stop(90%, #f21), to(#f00));
+  background: -moz-linear-gradient(#f74, #f21 90%, #f00);
+  text-shadow: 0 -1px 1px #a11;
+}
+ 
+ 
+ 
+ 
+.menu01 .sub01 {
+  top: 17%;
+}
+.menu01 .sub02 {
+  top: 34%;
+}
+.menu01 .sub03 {
+  top: 50%;
+}
+.menu01 .sub04 {
+  top: 67%;
+}
+.menu01 .sub05 {
+  top: 84%;
+  border-bottom: solid 1px #ccc;
+  
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+}
+.menu01 .sub05 a {
+  height: 19px;
+  
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+}
+ 
+ 
+ 
+ 
+.menu02 .sub01 {
+  top: 25%;
+}
+.menu02 .sub02 {
+  top: 50%;
+}
+.menu02 .sub03 {
+  top: 75%;
+  border-bottom: solid 1px #ccc;
+  
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+}
+.menu02 .sub03 a {
+  height: 19px;
+  
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+}
+ 
+ 
+ 
+ 
+.menu03 .sub01 {
+  top: 20%;
+}
+.menu03 .sub02 {
+  top: 40%;
+}
+.menu03 .sub03 {
+  top: 60%;
+}
+.menu03 .sub04 {
+  top: 80%;
+  border-bottom: solid 1px #ccc;
+  
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+}
+.menu03 .sub04 a {
+  height: 19px;
+  
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+}

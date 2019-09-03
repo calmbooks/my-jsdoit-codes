@@ -1,0 +1,710 @@
+/*=====================================================
+
+【CSS3でサルをカク - CSS Document】
+
+● index
+
+  1. all
+  2. karada
+    2-1. hand
+    2-2. foot
+    2-3. panty
+    2-4. tail
+    2-5. hear
+  3. face
+    2-1. eye
+    2-2. mouth
+    2-3. ear
+
+=====================================================*/
+
+
+/*========================================
+
+  1. all
+
+========================================*/
+
+body {
+  margin:0px;
+  padding:0px;
+  background-color: #FFF;
+}
+
+#back {
+  position: relative;
+  float:left;
+  clear:left;
+  width:400px;
+  height:400px;
+  margin:20px 0px 0px 20px;
+  background-color: #FFBD00;
+  border-radius: 20px; /* CSS3草案 */  
+  -webkit-border-radius: 20px; /* Safari,Google Chrome用 */  
+  -moz-border-radius: 20px; /* Firefox用 */ 
+}
+
+
+/*========================================
+
+  2. karada
+
+========================================*/
+
+#karada_line {
+  width:260px;
+  height:310px;
+  background-color: #594435;
+  position:absolute;
+  top: 45px;
+  left: 70px;
+  
+  border-radius: 130px 130px 85px 85px / 130px 130px 180px 180px; /* CSS3草案 */
+  -webkit-border-radius: 130px 130px 85px 85px / 130px 130px 180px 180px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 130px 130px 85px 85px / 130px 130px 180px 180px; /* Firefox用 */
+  
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg); 
+  
+  -webkit-transform-origin:50% 50%;
+     -moz-transform-origin:50% 50%;
+      -ms-transform-origin:50% 50%;
+       -o-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+}
+
+#karada {
+  width:230px;
+  height:280px;
+  background-color: #FFCD00;
+  position:absolute;
+  top: 60px;
+  left: 85px;
+  
+  border-radius: 115px 115px 70px 70px / 115px 115px 165px 165px; /* CSS3草案 */
+  -webkit-border-radius: 115px 115px 70px 70px / 115px 115px 165px 165px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 115px 115px 70px 70px / 115px 115px 165px 165px; /* Firefox用 */
+  
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg); 
+  
+  -webkit-transform-origin:50% 50%;
+     -moz-transform-origin:50% 50%;
+      -ms-transform-origin:50% 50%;
+       -o-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+}
+
+
+/*  2-1. hand
+========================================*/
+
+#right_hand_line, #right_hand,
+#left_hand_line, #left_hand {
+  -webkit-transform-origin:50% 50%;
+     -moz-transform-origin:50% 50%;
+      -ms-transform-origin:50% 50%;
+       -o-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+}
+
+#right_hand_line, #left_hand_line {
+  width:110px;
+  height:55px;
+  background-color: #594435;
+  position:absolute;
+  
+  border-radius: 55px 55px 35px 35px / 30px 30px 22px 22px; /* CSS3草案 */
+  -webkit-border-radius: 55px 55px 35px 35px / 30px 30px 22px 22px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 55px 55px 35px 35px / 30px 30px 22px 22px; /* Firefox用 */
+}
+
+#right_hand, #left_hand {
+  width:80px;
+  height:25px;
+  background-color: #FFCD00;
+  position:absolute;
+  
+  border-radius: 40px 40px 20px 20px / 15px 15px 7px 7px; /* CSS3草案 */
+  -webkit-border-radius: 40px 40px 20px 20px / 15px 15px 7px 7px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 40px 40px 20px 20px / 15px 15px 7px 7px; /* Firefox用 */
+}
+
+#left_hand_line, #left_hand {
+  -moz-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+}
+
+#right_hand_line, #right_hand {
+  -moz-transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+}
+
+#right_hand_line {
+  top: 235px;
+  left: 55px;
+  -webkit-animation: 'right_hand_line' 1s ease -2s infinite alternate;
+}
+
+@-webkit-keyframes 'right_hand_line' {
+  0% {
+    top: 235px;
+    left: 55px;
+    -webkit-transform: rotate(-35deg);
+  }
+  100% {
+    top: 225px;
+    left: 45px;
+    -webkit-transform: rotate(25deg);
+  }
+}
+
+#right_hand {
+  top: 250px;
+  left: 70px;
+  -webkit-animation: 'right_hand' 1s ease -2s infinite alternate;
+}
+
+@-webkit-keyframes 'right_hand' {
+  0% {
+    top: 250px;
+    left: 70px;
+    -webkit-transform: rotate(-35deg);
+  }
+  100% {
+    top: 240px;
+    left: 60px;
+    -webkit-transform: rotate(25deg);
+  }
+}
+
+#left_hand_line {
+  top: 225px;
+  left: 250px;
+  -webkit-animation: 'left_hand_line' 1s ease -2s infinite alternate;
+}
+
+@-webkit-keyframes 'left_hand_line' {
+  0% {
+    top: 225px;
+    left: 250px;
+    -webkit-transform: rotate(30deg);
+  }
+  100% {
+    top: 215px;
+    left: 250px;
+    -webkit-transform: rotate(-25deg);
+  }
+}
+
+#left_hand {
+  top: 240px;
+  left: 265px;
+  -webkit-animation: 'left_hand' 1s ease -2s infinite alternate;
+}
+
+@-webkit-keyframes 'left_hand' {
+  0% {
+    top: 240px;
+    left: 265px;
+    -webkit-transform: rotate(30deg);
+  }
+  100% {
+    top: 230px;
+    left: 265px;
+    -webkit-transform: rotate(-25deg);
+  }
+}
+
+
+/*  2-2. foot
+========================================*/
+
+#right_foot, #left_foot {
+  background-color: #594435;
+  position:absolute;
+  
+  -webkit-transform-origin:50% 50%;
+     -moz-transform-origin:50% 50%;
+      -ms-transform-origin:50% 50%;
+       -o-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+}
+
+#right_foot {
+  width:65px;
+  height:110px;
+  top: 280px;
+  left: 122px;
+  
+  border-radius: 27px 35px 35px 27px / 35px 55px 55px 35px; /* CSS3草案 */
+  -webkit-border-radius: 27px 35px 35px 27px / 35px 55px 55px 35px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 27px 35px 35px 27px / 35px 55px 55px 35px; /* Firefox用 */
+  
+  -moz-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+}
+
+#left_foot {
+  width:55px;
+  height:110px;
+  top: 275px;
+  left: 240px;
+  
+  border-radius: 30px 22px 22px 30px / 55px 35px 35px 55px; /* CSS3草案 */
+  -webkit-border-radius: 30px 22px 22px 30px / 55px 35px 35px 55px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 30px 22px 22px 30px / 55px 35px 35px 55px; /* Firefox用 */
+  
+  -moz-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+}
+
+
+/*  2-3. panty
+========================================*/
+
+#panty1, #panty2 {
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg); 
+  
+  -webkit-transform-origin:50% 50%;
+     -moz-transform-origin:50% 50%;
+      -ms-transform-origin:50% 50%;
+       -o-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+}
+
+#panty1 {
+  width:180px;
+  height:40px;
+  background-color: #594435;
+  position:absolute;
+  top: 310px;
+  left: 117px;
+  
+  border-radius: 0px 0px 70px 70px / 0px 0px 40px 40px; /* CSS3草案 */
+  -webkit-border-radius: 0px 0px 70px 70px / 0px 0px 40px 40px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 0px 0px 70px 70px / 0px 0px 40px 40px; /* Firefox用 */
+}
+
+#panty2 {
+  width:171px;
+  height:10px;
+  background-color: #FFCD00;
+  position:absolute;
+  top: 308px;
+  left: 120px;
+  
+  border-radius: 0px 0px 90px 90px / 0px 0px 10px 10px; /* CSS3草案 */
+  -webkit-border-radius: 0px 0px 90px 90px / 0px 0px 10px 10px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 0px 0px 90px 90px / 0px 0px 10px 10px; /* Firefox用 */
+}
+
+
+/*  2-4. tail
+========================================*/
+
+#tail1_1, #tail_line1_1,
+#tail1_3, #tail_line1_3 {
+  
+  -moz-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg); 
+  
+  -webkit-transform-origin:50% 50%;
+     -moz-transform-origin:50% 50%;
+      -ms-transform-origin:50% 50%;
+       -o-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+}
+
+#tail1_2, #tail_line1_2 {
+  
+  -moz-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg); 
+  
+  -webkit-transform-origin:50% 50%;
+     -moz-transform-origin:50% 50%;
+      -ms-transform-origin:50% 50%;
+       -o-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+}
+
+#tail1_1 {
+  width:120px;
+  height:30px;
+  background-color: #FFCD00;
+  position:absolute;
+  top: 304px;
+  left: 250px;
+  
+  border-radius: 30px 30px 60px 60px / 10px 10px 20px 20px; /* CSS3草案 */
+  -webkit-border-radius: 30px 30px 60px 60px / 10px 10px 20px 20px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 30px 30px 60px 60px / 10px 10px 20px 20px; /* Firefox用 */
+}
+
+#tail1_2 {
+  width:20px;
+  height:14px;
+  background-color: #FFCD00;
+  position:absolute;
+  top: 316px;
+  left: 357px;
+  
+  border-radius: 0px 15px 15px 0px / 0px 6px 8px 5px; /* CSS3草案 */
+  -webkit-border-radius: 0px 15px 15px 0px / 0px 6px 8px 5px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 0px 15px 15px 0px / 0px 6px 8px 5px; /* Firefox用 */
+}
+
+#tail1_3 {
+  width:120px;
+  height:10px;
+  background-color: #594435;
+  position:absolute;
+  top: 303px;
+  left: 250px;
+  
+  border-radius: 20px 20px 60px 60px / 0px 0px 10px 10px; /* CSS3草案 */
+  -webkit-border-radius: 20px 20px 60px 60px / 0px 0px 10px 10px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 20px 20px 60px 60px / 0px 0px 10px 10px; /* Firefox用 */
+  
+}
+
+#tail_line1_1 {
+  width:150px;
+  height:60px;
+  background-color: #594435;
+  position:absolute;
+  top: 288px;
+  left: 235px;
+  
+  border-radius: 35px 35px 75px 75px / 25px 25px 35px 35px; /* CSS3草案 */
+  -webkit-border-radius: 35px 35px 75px 75px / 25px 25px 35px 35px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 35px 35px 75px 75px / 25px 25px 35px 35px; /* Firefox用 */
+}
+
+#tail_line1_2 {
+  width:40px;
+  height:35px;
+  background-color: #594435;
+  position:absolute;
+  top: 302px;
+  left: 350px;
+  
+  border-radius: 0px 25px 20px 20px / 0px 15px 20px 5px; /* CSS3草案 */
+  -webkit-border-radius: 0px 25px 20px 20px / 0px 15px 20px 5px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 0px 25px 20px 20px / 0px 15px 20px 5px; /* Firefox用 */
+}
+
+#tail_line1_3 {
+  width:125px;
+  height:15px;
+  background-color: #FFBD00;
+  position:absolute;
+  top: 287px;
+  left: 255px;
+  
+  border-radius: 35px 35px 63px 63px / 0px 0px 15px 15px; /* CSS3草案 */
+  -webkit-border-radius: 35px 35px 63px 63px / 0px 0px 15px 15px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 35px 35px 63px 63px / 0px 0px 15px 15px; /* Firefox用 */
+}
+
+
+/*  2-5. hear
+========================================*/
+
+#hear_line1, #hear_line2, #hear1, #hear2 {
+  
+  -moz-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  
+  -webkit-transform-origin:50% 50%;
+     -moz-transform-origin:50% 50%;
+      -ms-transform-origin:50% 50%;
+       -o-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+}
+
+#hear_line1 {
+  width:170px;
+  height:75px;
+  background-color: #594435;
+  position:absolute;
+  top: 45px;
+  left: 62px;
+  
+  border-radius: 0px 0px 85px 85px / 0px 0px 75px 75px; /* CSS3草案 */
+  -webkit-border-radius: 0px 0px 85px 85px / 0px 0px 75px 75px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 0px 0px 85px 85px / 0px 0px 75px 75px; /* Firefox用 */
+}
+
+#hear_line2 {
+  width:70px;
+  height:10px;
+  background-color: #FFBD00;
+  position:absolute;
+  top: 29px;
+  left: 99px;
+  
+  border-radius: 0px 0px 37px 37px / 0px 0px 10px 10px; /* CSS3草案 */
+  -webkit-border-radius: 0px 0px 37px 37px / 0px 0px 10px 10px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 0px 0px 37px 37px / 0px 0px 10px 10px; /* Firefox用 */
+}
+
+#hear_line3 {
+  width:30px;
+  height:15px;
+  background-color: #FFBD00;
+  position:absolute;
+  top: 5px;
+  left: 80px;
+}
+
+#hear_line4 {
+  width:22px;
+  height:22px;
+  background-color: #594435;
+  position:absolute;
+  top: 12px;
+  left: 86px;
+  
+  border-radius: 11px; /* CSS3草案 */
+  -webkit-border-radius: 11px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 11px; /* Firefox用 */
+}
+
+#hear1 {
+  width:140px;
+  height:45px;
+  background-color: #FFCD00;
+  position:absolute;
+  top: 60px;
+  left: 80px;
+  
+  border-radius: 0px 0px 70px 70px / 0px 0px 45px 45px; /* CSS3草案 */
+  -webkit-border-radius: 0px 0px 70px 70px / 0px 0px 45px 45px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 0px 0px 70px 70px / 0px 0px 45px 45px; /* Firefox用 */
+}
+
+#hear2 {
+  width:74px;
+  height:10px;
+  background-color: #594435;
+  position:absolute;
+  top: 45px;
+  left: 94px;
+  
+  border-radius: 0px 0px 37px 37px / 0px 0px 10px 10px; /* CSS3草案 */
+  -webkit-border-radius: 0px 0px 37px 37px / 0px 0px 10px 10px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 0px 0px 37px 37px / 0px 0px 10px 10px; /* Firefox用 */
+}
+
+
+/*========================================
+
+  3. face
+
+========================================*/
+
+#face {
+  width:180px;
+  height:140px;
+  background-color: #FFF;
+  position:absolute;
+  top: 92px;
+  left: 110px;
+  
+  border-radius: 85px / 70px; /* CSS3草案 */
+  -webkit-border-radius: 85px / 70px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 85px / 70px; /* Firefox用 */
+  
+}
+
+
+/*  3-1. eye
+========================================*/
+
+#right_eye, #left_eye {
+  width:22px;
+  height:22px;
+  background-color: #594435;
+  position:absolute;
+  
+  border-radius: 11px; /* CSS3草案 */
+  -webkit-border-radius: 11px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 11px; /* Firefox用 */
+  
+}
+
+#right_eye {
+  top: 140px;
+  left: 130px;
+}
+
+#left_eye {
+  top: 138px;
+  left: 245px;
+}
+
+
+/*  3-2. mouth
+========================================*/
+
+#mouth1_1, #mouth1_2 {
+  width:28px;
+  height:28px;
+  background-color: #594435;
+  position:absolute;
+  top: 170px;
+  
+  border-radius: 14px; /* CSS3草案 */
+  -webkit-border-radius: 14px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 14px; /* Firefox用 */
+  
+}
+
+#mouth1_1 {
+  left: 176px;
+}
+
+#mouth1_2 {
+  left: 198px;
+}
+
+
+#mouth2_1, #mouth2_2 {
+  width:16px;
+  height:16px;
+  background-color: #FFF;
+  position:absolute;
+  top: 176px;
+  
+  border-radius: 14px; /* CSS3草案 */
+  -webkit-border-radius: 14px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 14px; /* Firefox用 */
+}
+
+
+#mouth2_1 {
+  left: 182px;
+}
+
+#mouth2_2 {
+  left: 204px;
+}
+
+#mouth3 {
+  width:60px;
+  height:20px;
+  background-color: #FFF;
+  position:absolute;
+  top: 164px;
+  left: 170px;
+}
+
+#mouth4_1, #mouth4_2, #mouth4_3 {
+  width:6px;
+  height:8px;
+  background-color: #594435;
+  position:absolute;
+  
+  border-radius: 3px; /* CSS3草案 */
+  -webkit-border-radius: 3px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 3px; /* Firefox用 */
+}
+
+#mouth4_1 {
+  top: 180px;
+  left: 176px;
+}
+
+#mouth4_2 {
+  top: 182px;
+  left: 198px;
+}
+
+#mouth4_3 {
+  top: 180px;
+  left: 220px;
+}
+
+
+/*  3-3. ear
+========================================*/
+
+#right_ear_line, #right_ear,
+#left_ear_line, #left_ear {
+  border-radius: 50px; /* CSS3草案 */
+  -webkit-border-radius: 50px; /* Safari,Google Chrome用 */
+  -moz-border-radius: 50px; /* Firefox用 */
+  
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg); 
+  
+  -webkit-transform-origin:50% 50%;
+     -moz-transform-origin:50% 50%;
+      -ms-transform-origin:50% 50%;
+       -o-transform-origin:50% 50%;
+          transform-origin:50% 50%;
+}
+
+#right_ear_line, #left_ear_line {
+  width:80px;
+  height:84px;
+  background-color: #594435;
+  position:absolute;
+}
+
+#right_ear_line {
+  top: 135px;
+  left: 45px;
+}
+
+#left_ear_line {
+  top: 130px;
+  left: 275px;
+}
+
+#right_ear, #left_ear {
+  width:50px;
+  height:54px;
+  background-color: #FFF;
+  position:absolute;
+}
+
+#right_ear {
+  top: 150px;
+  left: 60px;
+}
+
+#left_ear {
+  top: 145px;
+  left: 290px;
+}
+
+
+
+
+
+

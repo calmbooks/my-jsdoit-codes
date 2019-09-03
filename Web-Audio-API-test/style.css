@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100% !important;
+}
+body {
+	position: relative;
+	background-size: 20px auto;
+	height: 100%;
+    background: black;
+}
+#c {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#buttons input {
+    font-size: 20px;
+}

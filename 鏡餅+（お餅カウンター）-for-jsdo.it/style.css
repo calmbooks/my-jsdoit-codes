@@ -1,0 +1,244 @@
+/* //////////////////////////////////////////////////
+[Base] 
+////////////////////////////////////////////////// */
+
+/* --------------------------------------------------
+	Resetting default margin and padding
+-------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+object, iframe, pre, code, p, blockquote,
+form, fieldset, legend,
+table, th, td, caption, tbody, tfoot, thead,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section, audio, video, canvas {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+article, aside, figure, figcaption,footer,
+h1, h2, h3, h4, h5, h6, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* --------------------------------------------------
+	HTML, Body, Anchor
+-------------------------------------------------- */
+html {
+    overflow-y: scroll;
+	height: 100% !important;
+}
+body {
+	color: black;
+	font-family: Myriad, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+	font-size: 13px;
+	line-height: 1.5;	
+	word-wrap: break-word; 
+} 
+
+
+/* //////////////////////////////////////////////////
+[LAYOUT] 
+////////////////////////////////////////////////// */
+
+/* --------------------------------------------------
+	container
+-------------------------------------------------- */
+body {
+	height: 100%;
+	background: black;
+}
+#container {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+#content {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+	max-width: 580px;
+	margin: 0 auto;
+	background: url(http://2013-sumatsubushi.kayac.com/img/omochiCounter/bg_content.png) 50% 0;
+	background-size: 300px auto;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+/* --------------------------------------------------
+	blockOmochi
+-------------------------------------------------- */
+#blockOmochi {
+	padding-top: 150px;
+	opacity: 0;
+}
+#blockOmochi.scriptStyle_minOmochi {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* --------------------------------------------------
+	blockBtnAdd
+-------------------------------------------------- */
+#blockBtnAdd {
+	position: relative;
+	z-index: 20;
+	margin: 0 auto;
+	width: 41px;
+	height: 41px;
+	transform: translate(0, -30px);
+	-webkit-transform: translate(0, -30px);
+	-moz-transform: translate(0, -30px);
+}
+#blockBtnAdd.scriptStyle_omochiWait {
+	transform: translate(0, -4px);
+	-webkit-transform: translate(0, -4px);
+	-moz-transform: translate(0, -4px);
+}
+#btnAdd {
+	overflow: hidden;
+	position: relative;
+	z-index: 15;
+	height: 41px;
+} 
+#btnAdd img {
+	display: block;
+	position: absolute;
+	top: 0;
+	pointer-events: none;
+	-webkit-pointer-events: none;
+	-moz-pointer-events: none;
+}
+#btnAdd.active img,
+#btnAdd:active img {
+	top: -50px;
+}
+#blockBtnAdd .picLeaf {
+	position: absolute;
+	z-index: 10;
+	top: -17px;
+	right: -25px;
+}
+#blockBtnAdd .picFan {
+	position: absolute;
+	top: -55px;
+	left: -34px;
+}
+@-webkit-keyframes "btnAddJump" {
+	0% {
+		-webkit-transform: translate(0, -4px);
+	}
+	50% {
+		-webkit-transform: translate(0, -60px);
+	}
+	100% {
+		-webkit-transform: translate(0, -30px);
+	}
+}
+@-moz-keyframes btnAddJump {
+	0% {
+		-moz-transform: translate(0, -4px);
+	}
+	50% {
+		-moz-transform: translate(0, -60px);
+	}
+	100% {
+		-moz-transform: translate(0, -30px);
+	}
+}
+
+
+/* --------------------------------------------------
+	mochi
+-------------------------------------------------- */
+#blockOmochi .mochiWrap {
+	position: relative;
+	z-index: 5;
+	background: url(http://2013-sumatsubushi.kayac.com/img/omochiCounter/omochi.png) no-repeat 0 -500px, url(http://2013-sumatsubushi.kayac.com/img/omochiCounter/omochi_sakura.png) no-repeat 0 -500px;
+	background-size: 10px 10px;
+}
+#blockOmochi .mochi {
+	position: relative;
+	z-index: 10;
+	width: 178px;
+	height: 96px;
+	margin: -70px auto 0;
+	background: url(http://2013-sumatsubushi.kayac.com/img/omochiCounter/omochi.png) no-repeat 50% 50%;
+	background-size: 178px auto;
+	transition: 0.2s ease-out;
+	-webkit-transition: 0.2s ease-out;
+	-moz-transition: 0.2s ease-out;
+}
+#blockOmochi .mochi.first {
+	transform: scale(0.6);
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+}
+#blockOmochi .mochi.second {
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+}
+#blockOmochi .mochi.sakura {
+	background-image: url(http://2013-sumatsubushi.kayac.com/img/omochiCounter/omochi_sakura.png);
+}
+#blockOmochi .footerStand {
+	position: relative;
+	margin-top: -50px;
+	height: 105px;
+	background: url(http://2013-sumatsubushi.kayac.com/img/omochiCounter/bg_stand.png) repeat-x;
+	background-size: 25px auto;
+	text-align: center;
+}
+
+@-webkit-keyframes "omochiIn" {
+	0% {
+		-webkit-transform: scale(0.4, 1.2) translate(0, -450px);
+	}
+	90% {
+		-webkit-transform: scale(0.4, 1) translate(0, -60px);
+	}
+	100% {
+		-webkit-transform: scale(0.6, 0.6) translate(0, 0);
+	}
+}
+@-moz-keyframes omochiIn {
+	0% {
+		-moz-transform: scale(0.4, 1.2) translate(0, -450px);
+	}
+	90% {
+		-moz-transform: scale(0.4, 1) translate(0, -60px);
+	}
+	100% {
+		-moz-transform: scale(0.6, 0.6) translate(0, 0);
+	}
+}
+
+
+/* --------------------------------------------------
+	blockCountNumber
+-------------------------------------------------- */
+#blockCountNumber {
+	position: absolute;
+	top: 10px;
+	left: 8px;
+}
+#blockCountNumber .heading,
+#blockCountNumber .num {
+	color: #555;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5), 0 -1px 0 rgba(0,0,0,0.2);
+	line-height: 1;
+	text-align: center;
+}
+#blockCountNumber .heading {
+	font-size: 12px;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+#blockCountNumber .num {
+	font-size: 25px;
+}

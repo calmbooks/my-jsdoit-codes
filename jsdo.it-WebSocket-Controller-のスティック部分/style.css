@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    height: 100%;
+    background: url(http://jsrun.it/assets/r/p/Q/K/rpQKa.png);
+}
+#stickArea {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    width: 208px;
+    height: 208px;
+    margin: -104px 0 0 -104px;
+    background: url(http://jsrun.it/assets/u/L/4/Y/uL4Ym.png) no-repeat;
+}
+#stick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 159px;
+    height: 159px;
+    margin: -75px 0 0 -80px;
+    background: url(http://jsrun.it/assets/j/q/0/k/jq0kT.png) no-repeat;
+    -webkit-transform: translate3d(0,0,0);
+}
+#stick.touched {
+    background-position: 0 -175px;
+}

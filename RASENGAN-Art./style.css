@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+html {
+	height: 100% !important;
+}
+body {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+#c {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+div {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	bottom: 15px;
+	left: 15px;
+}
+@media screen and (min-width: 600px) and (min-height: 300px) {
+	div {
+		display: block;
+	}
+}
+div h2 {
+	font-size: 10px;
+	font-weight: normal;
+	color: rgba(255,255,255,0.7);
+	line-height: 1;
+}
+div h2 a {
+	color: rgba(255,255,255,0.7);
+	text-decoration: none;
+}
+div h2 a:hover {
+	color: rgba(255,255,255,0.9);
+}
+div h1 {
+	font-size: 24px;
+	font-family: "Quantico";
+	color: rgba(255,255,255,0.9);
+	line-height: 1;
+	margin-top: 3px;
+}
