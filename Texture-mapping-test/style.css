@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow: hidden;
+	background: #eee;
+	text-align: center;
+}
+#c {
+	display: inline-block;
+	background: black;
+}

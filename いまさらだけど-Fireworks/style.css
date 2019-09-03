@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: black url(http://jsrun.it/assets/e/a/L/t/eaLtL.jpg) no-repeat 50% 0;
+	background-size: 100% auto;
+}
+#area {
+	margin: 0 auto;
+	background: rgba(0,0,0,0.5);
+}

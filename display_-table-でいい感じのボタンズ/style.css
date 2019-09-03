@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: table;
+  width: 250px;
+  margin: 200px auto 0;
+  background: white;
+}
+li {
+  display: table-cell;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+}
+ul:hover li {
+  width: 15%;
+}
+li:hover {
+  width: 40% !important;
+  opacity: 0.7;
+}
+ul li:nth-of-type(1) { background: red; }
+ul li:nth-of-type(2) { background: orange; }
+ul li:nth-of-type(3) { background: yellow; }
+ul li:nth-of-type(4) { background: greenyellow; }
+ul li:nth-of-type(5) { background: limegreen; }
+
+

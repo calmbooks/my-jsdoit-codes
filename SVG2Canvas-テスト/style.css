@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    background: white;
+}
+#wrap {
+	width: 150px;
+	margin: 20px auto;
+}
+#stage {
+	background: red;
+}

@@ -1,0 +1,37 @@
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: #7FCEF6 url(http://www.kayac.com/company/fresh/2013/img/bg/body.png);
+}
+#chara {
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 120px;
+    margin: -60px 0 0 -50px;
+    background: url(http://www.kayac.com/company/fresh/2013/img/chara/sprite.png) no-repeat;
+}
+#chara.right.chg1 { background-position: 0 0; }
+#chara.right.chg2 { background-position: 0 -200px; }
+#chara.right.chg3 { background-position: 0 -400px; }
+#chara.right.chg4 { background-position: 0 -600px; }
+
+#chara.right.fly.chg1 { background-position: -200px 0; }
+#chara.right.fly.chg2 { background-position: -200px -200px; }
+#chara.right.fly.chg3 { background-position: -200px -400px; }
+#chara.right.fly.chg4 { background-position: -200px -600px; }
+
+#chara.left.chg1 { background-position: -400px 0; }
+#chara.left.chg2 { background-position: -400px -200px; }
+#chara.left.chg3 { background-position: -400px -400px; }
+#chara.left.chg4 { background-position: -400px -600px; }
+
+#chara.left.fly.chg1 { background-position: -600px 0; }
+#chara.left.fly.chg2 { background-position: -600px -200px; }
+#chara.left.fly.chg3 { background-position: -600px -400px; }
+#chara.left.fly.chg4 { background-position: -600px -600px; }

@@ -1,0 +1,68 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 400px;
+}
+table td {
+  width: 80px;
+  
+  transition: 0.5s ease-in-out; /* CSS草案 */
+  -webkit-transition: 0.5s ease-in-out; /* Safari, Chrome */
+  -moz-transition: 0.5s ease-in-out; /* Firefox */
+}
+table td:hover {
+  width: 200px;
+}
+table td a {
+  display: block;
+  background: #95C469;
+  text-align: center;
+  height: 50px;
+  text-indent: -99999px;
+  
+  transition: 0.5s ease-in-out; /* CSS草案 */
+  -webkit-transition: 0.5s ease-in-out; /* Safari, Chrome */
+  -moz-transition: 0.5s ease-in-out; /* Firefox */
+}
+table td a:link,
+table td a:visited {
+  color: #333;
+  text-decoration: none;
+}
+table td a:hover,
+table td a:active {
+  color: #333;
+  text-decoration: none;
+  background: #0EAA7A;
+}
+
+.exm .btn01 a {
+  background: url(http://calmbooks.me/shuho_demo/nav.png);
+}
+.exm .btn01 a:hover {
+  background: url(http://calmbooks.me/shuho_demo/nav.png) 100% 0;
+}
+.exm .btn02 a {
+  background: url(http://calmbooks.me/shuho_demo/nav.png) 0 -50px;
+}
+.exm .btn02 a:hover {
+  background: url(http://calmbooks.me/shuho_demo/nav.png) 100% -50px;
+}
+.exm .btn03 a {
+  background: url(http://calmbooks.me/shuho_demo/nav.png) 0 -100px;
+}
+.exm .btn03 a:hover {
+  background: url(http://calmbooks.me/shuho_demo/nav.png) 100% -100px;
+}
+.exm .btn04 a {
+  background: url(http://calmbooks.me/shuho_demo/nav.png) 0 -150px;
+}
+.exm .btn04 a:hover {
+  background: url(http://calmbooks.me/shuho_demo/nav.png) 100% -150px;
+}
+.exm .btn05 a {
+  background: url(http://calmbooks.me/shuho_demo/nav.png) 0 -200px;
+}
+.exm .btn05 a:hover {
+  background: url(http://calmbooks.me/shuho_demo/nav.png) 100% -200px;
+}
