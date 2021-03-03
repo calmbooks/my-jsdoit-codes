@@ -100,6 +100,10 @@
         cvs.width = this.output_w;
         cvs.height = this.output_h;
         cvs.style.display = "block";
+        var _this = this;
+        setTimeout(function() { 
+            _this.render_image();
+        }, 500);
         return this.render_image();
       };
 
